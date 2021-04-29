@@ -1,0 +1,21 @@
+.signin{
+    text-align: center;
+    position: relative;
+    right: 3vw;
+}
+.pos{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+
+
+}
+body{
+    background-color:azure;
+}
+.user{
+    position: relative;
+/* left: 1vw; */
+text-align: center;
+top: 1vh;
+}
