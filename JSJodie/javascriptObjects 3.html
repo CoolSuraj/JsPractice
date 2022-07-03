@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>third Javascript program</title>
+</head>
+
+<body>
+    <p id="demo">This is JS</p>
+    <button type="button" onclick="multiplication(3,4)">Press me</button>
+    <script>
+        //Javascript Objects are the most used now a days
+        //below is one Example
+        const cars = {
+            type: "fiat",
+            model: "500",
+            color: "white"  /*these are called properties*/
+        }  //using const for objects are common practice
+        console.log(cars);
+        const person = {
+            firstName: "surya",
+            lastName: "theKing",
+            company: "freedom",
+            fullname: function () {
+                console.log(this.firstName + " " + this.lastName);/* we can write function like this in js object*/
+                /*this represents this object*/
+            }
+        };
+        console.log(person);//this will show object
+     
+        //if this keyword is used here it will be a global object
+        //methods
+        person.fullname();  //this will show fullname as value
+
+
+
+
+
+    </script>
+</body>
+
+</html>

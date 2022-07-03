@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>fourth Javascript program</title>
+</head>
+
+<body>
+    <p id="demo">This is JS</p>
+    <button type="button" onclick="demo(3)">Press me</button>
+    <script>
+
+        function demo(time) {/*you can call this function from console with different params to check */
+            if (time < 12) {
+                console.log("AM");
+            } else {
+                console.log("PM");
+            }
+            return time; //just a placeholder for now
+            /*for more than one if you can use else if
+            But using too much else if is not good instead use switch case
+            */
+        }
+        //loops in JS
+        //for loop just like java
+        for (let index = 0; index < 5/*if u remove this it will loop infinitely*/; index++) {
+            console.log(index + " ");
+        }
+        console.log("while loop");
+        let j = 1; //initalization
+        while (j < 10)/*conditions*/ {
+            console.log(j);
+            j++;
+        }
+
+        //for in loop
+        const person = { fname: "John", lname: "Doe", age: 25 };
+
+        let text = "";
+        for (let x in person) { 
+            text += person[x];
+            text+=" ";
+        }
+        console.log(text);
+        console.log("for of loop");
+        const cars = ["BMW", "Volvo", "Mini"];
+
+        let text1 = "";
+        for (let x of cars) {
+        text1 += x;
+        text1+=" ";
+        }
+        console.log(text1);
+    </script>
+</body>
+
+</html>

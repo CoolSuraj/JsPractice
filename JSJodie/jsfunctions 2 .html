@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Second Javascript program</title>
+</head>
+
+<body>
+    <p id="demo">This is JS</p>
+    <button type="button" onclick="multiplication(3,4)">Press me</button>
+    <script>
+        function myFunction() {
+            console.log("this is a call to myFunction function");
+        }
+        myFunction();
+
+        function multiplication(p1, p2) {
+            let x = p1 * p2;
+            console.log(x)
+            return x;
+        }
+        console.log(multiplication(11, 12));
+        console.log(multiplication()); //if no params given it will say Nan
+        console.log(multiplication(0)); //if one params given it will say Nan
+        //anonymous functions
+
+        //this functions can be written anywhere with different situations
+        let x = function () {
+            console.log('It is an anonymous function');
+        };
+        x();
+
+        //can be used as args to other function
+        setTimeout(function () {
+            console.log('Execute later after 1 second');
+        }, 1000);
+
+        //immediate execution
+        (function () {
+            console.log('immediate execution of anonymous function');
+        })();
+
+        //Arrow functions
+        let show = () => console.log('Arrow function');
+
+        show(); //calling arrow function
+
+
+
+    </script>
+</body>
+
+</html>

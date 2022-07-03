@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>First Javascript program</title>
+</head>
+
+<body>
+    <p id="demo">This is JS</p>
+    <button type="button" onclick="document.write('Erase all')">Press me</button>
+    
+    <script>
+        //onclick will call the function of JS in button above
+        //This is where we can write js code in html pages
+        document.getElementById("demo").innerHTML = "This is chnaged due to JS";
+        document.write(5 + 6); //This erases all the things so better not to use much 
+        alert("Hello World!!") //window have global scope so instead of using window.alert() we can directly use alert()
+
+        // types of variables in JS let,const &  var is also used
+        { let a = 5; }  //normal variable can be reassigned and it have block scope
+        let b = 10;
+        //this variable can get type based on assigned value
+
+        //must be declared before use
+
+        const c = 18;  //as said we cannot reassign as this constant & it should have value while declaration
+        var a=9;
+
+        //but const arrays can be changed
+        const cars = ["volvo", "BMW"];
+        cars[0] = "Toyota";
+        cars.push("Audi");
+        //these operations are valid
+
+        // cars=["1","2","3"] //this is not valid
+
+        //Arithmatic Operators
+        let x = 100;
+        let y = x + 50;//+ addition Operator
+        console.log(y); //will show in console of browser
+        let z = x - 50;
+        console.log(z);
+        let d = 5 ** 2;  //this is exponential operator
+
+        console.log(d);
+
+
+
+
+    </script>
+</body>
+
+</html>
