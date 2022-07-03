@@ -6,6 +6,7 @@ then 2. npm i express --save
 
 To run 3. node index.js
 we can also use nodemon index.js //for that use sudo npm install -g --force nodemon to install first
+for more complex examples https://expressjs.com/en/starter/examples.html
 
 */
 
